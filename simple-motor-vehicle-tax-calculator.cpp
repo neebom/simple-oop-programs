@@ -16,7 +16,7 @@ void main()
 
 	switch (case_no)
 	{
-		//Use of simple -if-
+	//Use of simple -if-
 	case 1:
 		int dd, mm, yy;
 		cout << "\n(Note: Wrong Date/Format cause a blank output)" << endl;
@@ -25,7 +25,7 @@ void main()
 		if (dd >= 0 && mm >= 0 && yy >= 19 && dd <= 31 && mm <= 12 && yy < 20)
 			cout << "\nToken tax is valid till 30 - Jun - 2020\n" << endl;
 		break;
-		//Use of -if-else-
+	//Use of -if-else-
 	case 2:
 		int filer;
 		cout << "\nAre you a Tax Filer? Non-Filer (Press 0), Tax-Filer (Press 1 or greate than 1): ";
@@ -36,37 +36,39 @@ void main()
 			cout << "\nCongrat's! You will get 50% Concession on Income Tax for Motor Car." << endl;
 
 		break;
-		//Use of Nested -if- (with if-else-if)
+	//Use of Nested -if-
 	case 3:
 		int hp;
 		cout << "\nEnter the Power fo Engine (cc): ";
 		cin >> hp;
-		if (hp > 0 && hp <= 999) {
-			cout << "\nTax Will be 1% of the value of the vehicle." << endl;
-			if (hp>=100)
-				cout << "Combined Harvesters, Rigs, etc. PKR. 300/- each will be charged" << endl;
-		}
-		else if (hp >= 1000 && hp <= 1500) {
-			cout << "\nTax Will be 2% of the value of the vehicle." << endl;
-			if (hp >= 1300 && hp < 1500)
-				cout << "Imported Car? PKR. 15,000/- Will Charged" << endl;
-		}
-		else if (hp >= 1501 && hp <= 1999) {
-			cout << "\nTax Will be 3% of the value of the vehicle." << endl;
-			if (hp >= 1500 && hp <= 1999)
-				cout << "Imported Car? PKR. 25,000/- Will Charged" << endl;
-		}
-		else if (hp >= 2000) {
-			cout << "\nTax Will be 4% of the value of the vehicle." << endl;
-			if (hp >= 200 && hp <= 2499)
-				cout << "Imported Car? PKR. 100,000/- Will Charged" << endl;
-			if (hp >= 2500)
-				cout << "Imported Car? PKR. 300,000/- Will Charged" << endl;
+		if (hp > 0) {
+			if (hp > 0 && hp <= 999) {
+				cout << "\nTax Will be 1% of the value of the vehicle." << endl;
+				if (hp >= 100 && hp <= 999)
+					cout << "Combined Harvesters, Rigs, etc. PKR. 300/- each will be charged" << endl;
+			}
+			if (hp >= 1000 && hp <= 1500) {
+				cout << "\nTax Will be 2% of the value of the vehicle." << endl;
+				if (hp >= 1300 && hp < 1500)
+					cout << "Imported Car? PKR. 15,000/- Will Charged" << endl;
+			}
+			if (hp >= 1501 && hp <= 1999) {
+				cout << "\nTax Will be 3% of the value of the vehicle." << endl;
+				if (hp >= 1500 && hp <= 1999)
+					cout << "Imported Car? PKR. 25,000/- Will Charged" << endl;
+			}
+			if (hp >= 2000) {
+				cout << "\nTax Will be 4% of the value of the vehicle." << endl;
+				if (hp >= 200 && hp <= 2499)
+					cout << "Imported Car? PKR. 100,000/- Will Charged" << endl;
+				if (hp >= 2500)
+					cout << "Imported Car? PKR. 300,000/- Will Charged" << endl;
+			}
 		}
 		else
 			cout << "\nOpps! Invalid Choice :-(" << endl;
 		break;
-		//Use of if-else-if
+	//Use of if-else-if
 	case 4:
 		int fee;
 		cout << "\nCategory: " << endl;
@@ -89,7 +91,7 @@ void main()
 		else
 			cout << "\nOpps! Invalid Choice :-(" << endl;
 		break;
-		//Use of switch (with if-else-if)
+	//Use of switch (with if-else-if)
 	case 5:
 		int token_tax;
 		cout << "\nAre you a Tax Filer? Non-Filer (Press 0), Tax-Filer (Press 1): ";
