@@ -59,7 +59,7 @@ void main()
 			}
 			if (hp >= 2000) {
 				cout << "\nTax Will be 4% of the value of the vehicle." << endl;
-				if (hp >= 200 && hp <= 2499)
+				if (hp >= 2000 && hp <= 2499)
 					cout << "Imported Car? PKR. 100,000/- Will Charged" << endl;
 				if (hp >= 2500)
 					cout << "Imported Car? PKR. 300,000/- Will Charged" << endl;
