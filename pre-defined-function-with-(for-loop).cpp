@@ -1,5 +1,4 @@
 //In this program PRE-DEFINED function is used with for-loop
-
 #include <iostream>
 using namespace std;
 
